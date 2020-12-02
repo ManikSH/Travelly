@@ -25,8 +25,8 @@
           <a href="#">Travelly</a>
         </div>
         <div class="navLinks">
-          <a href="#">Location</a>
-          <a href="#">Benifits</a>
+          <a href="#featuresSection">Location</a>
+          <a href="#benifitsHeadSection">Benifits</a>
           <a href="">Contact</a>
         </div>
       </div>
@@ -54,5 +54,75 @@
         <img src="images/cloud.png" alt="" class="cloud cloud2" />
       </div>
     </section>
+
+    <section id="benifitsHeadSection">
+      <h1>The Perfect Travel</h1>
+      <h3>
+        We cover everything from picking the right hotel <br />
+        to flight and perfect destination.
+      </h3>
+    </section>
+
+    <section class="benifitsSection">
+      <div class="cards">
+        <div class="card">
+          <div class="benifitsIcon">
+            <img src="icons/route-solid.svg" alt="" />
+          </div>
+          <h3>Travel</h3>
+          <p>Travel in over 250 countries with no effort.</p>
+        </div>
+        <div class="card">
+          <div class="benifitsIcon">
+            <img src="icons/bed-solid.svg" alt="" />
+          </div>
+          <h3>Hotel</h3>
+          <p>Hotels located near popular areas.</p>
+        </div>
+        <div class="card">
+          <div class="benifitsIcon">
+            <img src="icons/plane-departure-solid.svg" alt="" />
+          </div>
+          <h3>Flight</h3>
+          <p>Flight included in every puchased trip.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactMeSection">
+      <div class="contactMeContainer">
+        <div class="contactMeMainContainer">
+          <div class="contactMeHead">
+            <h2>Contact Us</h2>
+          </div>
+          <form action="https://formspree.io/f/xyybdoqr" method="POST">
+            <div class="contactMeName">
+              <label for="name">Name:</label>
+              <input type="text" name="name" required />
+            </div>
+            <div class="contactMeEmail">
+              <label for="email">E-mail:</label>
+              <input type="email" name="_replyto" required />
+            </div>
+            <button type="submit" value="send">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h3>Travelly &copy;</h3>
+      <div class="footerLinks">
+        <button>
+          <img src="icons/instagram.svg" alt="" />
+        </button>
+        <button>
+          <img src="icons/twitter.svg" alt="" />
+        </button>
+        <button>
+          <img src="icons/youtube.svg" alt="" />
+        </button>
+      </div>
+    </footer>
   </body>
 </html>
