@@ -1,0 +1,47 @@
+/* ----------------------------- Genral ------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* ------------------------------- Header -------------------------- */
+
+nav {
+    background-color: #0c1e33;
+}
+
+.navContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 10vh;
+  width: 95vw;
+  margin: auto;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0.6rem;
+}
+
+.logo {
+    flex: 2 1 20rem;
+}
+
+.navLinks {
+    flex: 1 1 20rem;
+    display: flex;
+    justify-content: space-around;
+}
