@@ -51,7 +51,7 @@ nav a {
 
 .hero {
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.705), transparent) ,url(/images/landing-page.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.705), transparent) ,url(images/landing-page.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
