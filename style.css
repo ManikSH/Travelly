@@ -12,6 +12,7 @@ a {
 }
 
 body {
+  display:none;
   font-family: 'Poppins', sans-serif;
 }
 
