@@ -82,7 +82,7 @@ nav a {
   outline: none;
   cursor: pointer;
   color: white;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -91,10 +91,6 @@ button:hover {
 
 
 @media (max-width: 677px) {
-  /* .logo {
-    text-align: center;
-  } */
-
   html {
     font-size: 85%;
   }
@@ -103,5 +99,103 @@ button:hover {
 @media (max-width: 572px) {
   .logo {
     text-align: center;
+  }
+}
+
+
+/* ------------------------- Features --------------------------------------- */
+
+
+#featuresSection {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.466), transparent) ,url(images/new-york-page.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.features {
+  font-size: 110%;
+  width: 90%;
+  margin: auto;
+  color: rgb(0, 0, 0);
+}
+
+.featuresHead1 {
+  padding: 1rem 0rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.featuresHead2 {
+  font-weight: lighter;
+  background: -webkit-linear-gradient(rgb(6, 16, 102), rgb(51, 57, 85));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25rem;
+}
+
+.cloud2 {
+  animation: animateCloud2 2s ease-in-out 0s infinite alternate;
+}
+
+.cloud1 {
+  top: 0%;
+  z-index: -1;
+  animation: animateCloud1 3s ease-in-out 0s infinite alternate;
+}
+
+@keyframes animateCloud1 {
+  from {
+    transform: translate(0rem, 0rem);
+  }
+
+  to {
+    transform: translate(2.5rem, -2.5rem);
+  }
+}
+
+@keyframes animateCloud2 {
+  from {
+    transform: translate(0rem, 0rem);
+  }
+
+  to {
+    transform: translate(2.5rem, -2.5rem);
+  }
+}
+
+@media (max-width: 570px) {
+  .cloud {
+    height: 20rem;
+  }
+
+  .featuresHead1 {
+    text-align: center;
+  }
+
+  .featuresHead2 {
+    padding: 1rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.61);
+    color: white;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  }
+
+  .cloud2 {
+    z-index: -1;
   }
 }
