@@ -11,13 +11,13 @@ a {
 }
 
 body {
-    font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* ------------------------------- Header -------------------------- */
+/* ------------------------------- Navigation -------------------------- */
 
 nav {
-    background-color: #0c1e33;
+  background-color: #06203d;
 }
 
 .navContainer {
@@ -30,18 +30,78 @@ nav {
 }
 
 nav a {
-    color: white;
-    font-size: 1.2rem;
-    display: inline-block;
-    padding: 0.6rem;
+  color: white;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.6rem;
 }
 
 .logo {
-    flex: 2 1 20rem;
+  flex: 2 1 20rem;
+  font-family: 'Pattaya', sans-serif;
 }
 
 .navLinks {
-    flex: 1 1 20rem;
-    display: flex;
-    justify-content: space-around;
+  flex: 1 1 20rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ------------------------------ Hero ---------------------------- */
+
+.hero {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.705), transparent) ,url(/images/landing-page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+}
+
+.heroText1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.heroText2 {
+  font-weight: lighter;
+  font-size: 1.4rem;
+  padding: 1.5rem;
+}
+
+.heroBtn {
+  background-color: rgb(90, 90, 199);
+  font-size: 0.9rem;
+  padding: 0.8rem 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(31, 31, 75);
+}
+
+
+@media (max-width: 677px) {
+  /* .logo {
+    text-align: center;
+  } */
+
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 572px) {
+  .logo {
+    text-align: center;
+  }
 }
